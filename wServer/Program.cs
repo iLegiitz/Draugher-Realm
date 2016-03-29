@@ -29,7 +29,7 @@ namespace wServer
 
         private static void Main(string[] args)
         {
-            Console.Title = "Fabiano Swagger of Doom - World Server";
+            Console.Title = "The Ancient Realm - World 1";
             try
             {
                 XmlConfigurator.ConfigureAndWatch(new FileInfo("log4net_wServer.config"));
