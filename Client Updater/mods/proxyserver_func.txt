@@ -1,5 +1,5 @@
 ; _-names
-#set fullfunctionname "CHANGE1"	; refid for the trait
+#set fullfunctionname "iLegiitz"	; refid for the trait
 #set serverNS "CHANGE2"								; namespace for the Server class
 #set portProperty "CHANGE3"							; property name for port in Parameters
  
