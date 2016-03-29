@@ -9,8 +9,8 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 
-[assembly: AssemblyTitle("wServer")]
-[assembly: AssemblyDescription("ROTMG Private Server")]
+[assembly: AssemblyTitle("TAR")]
+[assembly: AssemblyDescription("Draughers Realm")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Aceticsoft")]
 [assembly: AssemblyProduct("wServer")]
