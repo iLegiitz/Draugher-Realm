@@ -39,8 +39,8 @@ namespace wServer
 
                 Settings = new SimpleSettings("wServer");
                 new Database(
-                    Settings.GetValue<string>("db_host", "127.0.0.1"),
-                    Settings.GetValue<string>("db_database", "rotmgprod"),
+                    Settings.GetValue<string>("db_host", "https://github.com/iLegiitz/Draugher-Realm"),
+                    Settings.GetValue<string>("db_database", "TAR"),
                     Settings.GetValue<string>("db_user", "root"),
                     Settings.GetValue<string>("db_auth", ""));
 
@@ -73,11 +73,11 @@ namespace wServer
                         Settings.Reload();
                 }
 
-                log.Info("Terminating...");
+                log.Info("");
                 server.Stop();
                 policy.Stop();
                 manager.Stop();
-                log.Info("Server terminated.");
+                log.Info("");
             }
             catch (Exception e)
             {
@@ -101,8 +101,8 @@ namespace wServer
                 UseDefaultCredentials = false,
                 EnableSsl = true,
                 Credentials =
-                    new NetworkCredential(Settings.GetValue<string>("serverEmail"),
-                        Settings.GetValue<string>("serverEmailPassword"))
+                    new NetworkCredential(Settings.GetValue<string>("tyler.badge98@gmail.com"),
+                        Settings.GetValue<string>("2016333Badge"))
             };
 
             client.Send(message);
