@@ -10,7 +10,7 @@ namespace server.credits
     {
         protected override void HandleRequest()
         {
-            string status = "Nope, fuck you faggot :D";
+            string status = "Nope";
             //using (Database db = new Database())
             //{
             //    NameValueCollection query = HttpUtility.ParseQueryString(context.Request.Url.Query);
