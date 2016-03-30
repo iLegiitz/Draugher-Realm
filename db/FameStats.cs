@@ -127,24 +127,24 @@ public class FameStats
         double bonus = 0;
         if (chr.CharacterId < 2)            //Ancestor
         {
-            bonus = Math.Floor(bonus) + ((baseFame + Math.Floor(bonus)) * 0.1) + 20;
+            bonus = Math.Floor(bonus) + ((baseFame + Math.Floor(bonus)) + 100) * 2;
         }
         //Legacy Builder???
         if (ShotsThatDamage == 0)           //Pacifist
         {
-            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 0.25;
+            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 1;
         }
         if (PotionsDrunk == 0)              //Thirsty
         {
-            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 0.25;
+            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 1;
         }
         if (SpecialAbilityUses == 0)        //Mundane
         {
-            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 0.25;
+            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 1;
         }
         if (Teleports == 0)                 //Boots on the Ground
         {
-            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 0.25;
+            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 1;
         }
         if (PirateCavesCompleted > 0 &&
             UndeadLairsCompleted > 0 &&
@@ -157,35 +157,35 @@ public class FameStats
             JunglesCompleted > 0 &&
             ManorsCompleted > 0)            //Tunnel Rat
         {
-            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 0.1;
+            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 1;
         }
         if ((double)GodKills / (GodKills + MonsterKills) > 0.1)   //Enemy of the Gods
         {
-            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 0.1;
+            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 1.5;
         }
         if ((double)GodKills / (GodKills + MonsterKills) > 0.5)   //Slayer of the Gods
         {
-            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 0.1;
+            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 2;
         }
         if (OryxKills > 0)                  //Oryx Slayer
         {
-            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 0.1;
+            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 1;
         }
         if ((double)ShotsThatDamage / Shots > 0.25)     //Accurate
         {
-            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 0.1;
+            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 1;
         }
         if ((double)ShotsThatDamage / Shots > 0.5)      //Sharpshooter
         {
-            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 0.1;
+            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 1;
         }
         if ((double)ShotsThatDamage / Shots > 0.75)     //Sniper
         {
-            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 0.1;
+            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 1;
         }
         if (TilesUncovered > 1000000)       //Explorer
         {
-            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 0.05;
+            bonus = Math.Floor(bonus) + (baseFame + Math.Floor(bonus)) * 0.5;
         }
         if (TilesUncovered > 4000000)       //Cartographer
         {
